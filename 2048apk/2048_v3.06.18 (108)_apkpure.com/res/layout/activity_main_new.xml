@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/main_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" />
+    <include android:gravity="center_horizontal" android:id="@id/adsBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/widget_banner_ad_container" />
+    <RelativeLayout android:id="@id/game_dialog_view_container" android:tag="@string/flag_scale" android:background="@color/restart_panel_bk_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/game_dialog_text_container" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0px" android:layout_above="@id/game_dialog_view_ad_container" android:layout_centerHorizontal="true">
+            <TextView android:textSize="73.0px" android:textColor="@color/text_black" android:id="@id/game_dialog_text_main" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/restart" />
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0px">
+                <TextView android:textSize="54.0px" android:textColor="@color/text_black" android:id="@id/game_dialog_text_yes" android:tag="@string/flag_scale" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yes" android:onClick="onClickDialogViewYes" />
+                <TextView android:textSize="54.0px" android:textColor="@color/text_black" android:id="@id/game_dialog_text_no" android:tag="@string/flag_scale" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="50.0px" android:text="@string/no" android:onClick="onClickDialogViewNo" />
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:gravity="center_horizontal" android:id="@id/game_dialog_view_ad_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <RelativeLayout android:tag="@string/flag_scale" android:background="@android:color/transparent" android:layout_width="@dimen/native_advanced_ad_width" android:layout_height="300.0px" />
+            <RelativeLayout android:id="@id/game_dialog_view_ad_panel" android:tag="@string/flag_scale" android:layout_width="@dimen/native_advanced_ad_width" android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <include android:id="@id/todays_offer" layout="@layout/todays_offer" />
+</RelativeLayout>

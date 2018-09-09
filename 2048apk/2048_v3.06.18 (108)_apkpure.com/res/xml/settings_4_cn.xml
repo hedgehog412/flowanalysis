@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/general">
+        <ListPreference android:entries="@array/gameEndsAtArray" android:title="@string/game_ends_at" android:key="pref_game_ends_at" android:summary="@string/game_ends_at_summary" android:defaultValue="2048" android:entryValues="@array/gameEndsAtArrayValues" />
+        <Preference android:title="@string/instruction" android:key="pref_instruction" android:summary="@string/how_to_play" />
+    </PreferenceCategory>
+</PreferenceScreen>

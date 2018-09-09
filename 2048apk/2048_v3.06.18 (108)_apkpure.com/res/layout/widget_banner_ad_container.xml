@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="bottom|center" android:id="@id/adsBottom" android:tag="@string/flag_scale" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:ads="http://schemas.android.com/apk/res-auto">
+    <ImageView android:gravity="center_horizontal" android:id="@id/houseAdImgView" android:tag="@string/flag_scale" android:clickable="true" android:layout_width="320.0px" android:layout_height="50.0px" android:src="@drawable/house_ad_default" android:layout_centerHorizontal="true" android:onClick="onClickHouseBannerAd" />
+</RelativeLayout>

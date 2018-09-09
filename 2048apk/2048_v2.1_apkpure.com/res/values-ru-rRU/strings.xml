@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">настройки</string>
+    <string name="ad_id">ca-app-pub-3341339355055368/1041182733</string>
+    <string name="ad_id1">ca-app-pub-4425504570634371/7361772442</string>
+    <string name="app_name">2048</string>
+    <string name="endless">Бесконечный Режим</string>
+    <string name="for_now">На данный момент…</string>
+    <string name="game_over">Игра закончена!</string>
+    <string name="go_on">Нажмите, чтобы продолжить</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="high_score">РЕКОРД</string>
+    <string name="instructions">  Регистрация номера и получить титул 2048.</string>
+    <string name="interstitial_id">ca-app-pub-3341339355055368/2517915937</string>
+    <string name="interstitial_id1">ca-app-pub-4425504570634371/8838505649</string>
+    <string name="new_game">Новая игра</string>
+    <string name="score">ГОЛ</string>
+    <string name="you_win">Ты победил!</string>
+</resources>

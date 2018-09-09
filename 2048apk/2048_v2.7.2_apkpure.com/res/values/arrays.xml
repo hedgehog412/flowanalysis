@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_ends_list">
+        <item>1024</item>
+        <item>2048</item>
+        <item>Endless</item>
+    </string-array>
+    <string-array name="game_orientation_list">
+        <item>Portrait</item>
+        <item>Landscape</item>
+        <item>Auto</item>
+    </string-array>
+    <string-array name="game_ends_value">
+        <item>1024</item>
+        <item>2048</item>
+        <item>32768</item>
+    </string-array>
+    <string-array name="game_orientation_value">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+</resources>

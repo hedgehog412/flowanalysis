@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_ends_list">
+        <item>1024</item>
+        <item>2048</item>
+        <item>無限</item>
+    </string-array>
+    <string-array name="game_orientation_list">
+        <item>縱向</item>
+        <item>橫向</item>
+        <item>自動</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="game_ends_list">
+        <item>1024</item>
+        <item>2048</item>
+        <item>끝없는</item>
+    </string-array>
+    <string-array name="game_orientation_list">
+        <item>세로</item>
+        <item>가로</item>
+        <item>자동</item>
+    </string-array>
+</resources>

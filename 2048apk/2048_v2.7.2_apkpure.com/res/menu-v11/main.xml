@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_action_refresh" android:id="@id/action_reset" android:orderInCategory="101" android:title="@string/action_reset" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_share" android:id="@id/action_share" android:orderInCategory="101" android:title="@string/action_share" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_leaderboard" android:id="@id/action_leaderboard" android:orderInCategory="101" android:title="@string/action_leaderboard" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_star" android:id="@id/action_rate" android:orderInCategory="101" android:title="@string/action_rate" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_leaderboard" android:id="@id/action_achievements" android:orderInCategory="110" android:title="@string/menu_achievements" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_action_settings" android:id="@id/action_settings" android:orderInCategory="110" android:title="@string/menu_settings" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_undo" android:id="@id/action_undo" android:orderInCategory="101" android:title="@string/action_undo" android:showAsAction="never" />
+    <item android:icon="@drawable/ic_action_share" android:id="@id/action_share_app" android:orderInCategory="101" android:title="@string/share_app" android:showAsAction="ifRoom" />
+    <item android:icon="@drawable/ic_action_help" android:id="@id/action_help" android:orderInCategory="110" android:title="@string/menu_help" android:showAsAction="ifRoom" />
+</menu>

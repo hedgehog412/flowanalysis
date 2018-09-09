@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_games_view_root" android:tag="@string/flag_scale" android:background="@color/moregames_page_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/more_games_topbar" android:tag="@string/flag_scale" android:background="@color/moregames_topbar_background" android:layout_width="fill_parent" android:layout_height="70.0px" android:layout_alignParentTop="true">
+        <Button android:tag="@string/flag_scale" android:background="@drawable/btn_close_icon" android:layout_width="45.0px" android:layout_height="45.0px" android:layout_marginLeft="15.0px" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:onClick="onBackButtonClick" />
+        <TextView android:textSize="28.0px" android:textColor="@color/moregames_topbar_title" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_games" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <GridView android:gravity="center_horizontal" android:id="@id/more_games_grid" android:tag="@string/flag_scale" android:paddingTop="0.0px" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="6.0px" android:layout_marginTop="6.0px" android:layout_marginRight="6.0px" android:horizontalSpacing="0.0dip" android:verticalSpacing="0.0dip" android:stretchMode="columnWidth" android:columnWidth="0.0dip" android:numColumns="1" android:layout_below="@id/more_games_topbar" />
+</RelativeLayout>

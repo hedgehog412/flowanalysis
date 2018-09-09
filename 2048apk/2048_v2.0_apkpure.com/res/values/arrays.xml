@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="type_array">
+        <item>Classic(4x4)</item>
+        <item>Big(5x5)</item>
+        <item>Bigger(6x6)</item>
+        <item>Huge(8x8)</item>
+        <item>Tiny(3x3)</item>
+    </string-array>
+</resources>

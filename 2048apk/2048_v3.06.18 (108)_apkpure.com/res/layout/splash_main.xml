@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/root_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@id/icon_in_splash" android:tag="@string/flag_scale" android:layout_width="200.0px" android:layout_height="200.0px" android:src="@drawable/icon_256" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <ProgressBar android:id="@id/splash_progressbar" android:tag="@string/flag_scale" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

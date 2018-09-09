@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">إعدادات</string>
+    <string name="ad_id">ca-app-pub-3341339355055368/1041182733</string>
+    <string name="ad_id1">ca-app-pub-4425504570634371/7361772442</string>
+    <string name="app_name">2048</string>
+    <string name="endless">التي لا نهاية لها طريقة</string>
+    <string name="for_now">الى الان…</string>
+    <string name="game_over">انتهت اللعبة!</string>
+    <string name="go_on">إضغط للإستمرار</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="high_score">درجة عالية</string>
+    <string name="instructions">  الانضمام إلى أرقام والحصول على لقب 2048.</string>
+    <string name="interstitial_id">ca-app-pub-3341339355055368/2517915937</string>
+    <string name="interstitial_id1">ca-app-pub-4425504570634371/8838505649</string>
+    <string name="new_game">لعبة جديدة</string>
+    <string name="score">أحرز هدفاً</string>
+    <string name="you_win">فزت!</string>
+</resources>

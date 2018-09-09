@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:tag="@string/flag_scale" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:tag="@string/flag_scale" android:background="@null" android:layout_width="fill_parent" android:layout_height="132.0px">
+        <RelativeLayout android:tag="@string/flag_scale" android:background="@null" android:paddingLeft="3.0px" android:paddingTop="2.0px" android:paddingRight="3.0px" android:paddingBottom="2.0px" android:layout_width="fill_parent" android:layout_height="130.0px" android:layout_marginLeft="2.0px" android:layout_marginRight="2.0px" android:layout_centerHorizontal="true">
+            <RelativeLayout android:id="@id/more_games_item_content" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0px" android:layout_marginBottom="4.0px" android:layout_centerVertical="true">
+                <ImageView android:id="@id/promo_app_icon" android:tag="@string/flag_scale" android:layout_width="@dimen/NativeAdListViewIconSize" android:layout_height="@dimen/NativeAdListViewIconSize" android:layout_marginLeft="5.0px" android:src="@drawable/ic_play_game_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/promo_app_information" android:tag="@string/flag_scale" android:padding="0.0px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0px" android:layout_marginRight="5.0px" android:layout_marginBottom="5.0px" android:layout_toLeftOf="@id/install_btn_layout" android:layout_toRightOf="@id/promo_app_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="19.0px" android:textColor="@color/moregames_app_title" android:id="@id/promo_app_name" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="App Title" />
+                    <TextView android:textSize="17.0px" android:textColor="@color/moregames_app_content" android:id="@id/promo_app_words" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0px" android:text="App Description" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/install_btn_layout" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0px" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <Button android:textSize="20.0px" android:textColor="@color/native_ad_install_button_font" android:id="@id/button_download" android:tag="@string/flag_scale" android:background="@drawable/btn_round_corner_1" android:layout_width="@dimen/NativeAdListViewInstallButtonWidth" android:layout_height="@dimen/NativeAdListViewInstallButtonHeight" android:text="@string/install__capital" />
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layout_award_coins" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0px">
+                        <TextView android:textSize="20.0px" android:textColor="@color/native_ad_desc_title" android:id="@id/text_plus_xx" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/plus_xx" />
+                        <ImageView android:tag="@string/flag_scale" android:layout_width="@dimen/iconSmallSize" android:layout_height="@dimen/iconSmallSize" android:layout_marginLeft="5.0px" android:src="@drawable/coins" android:layout_alignParentLeft="true" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/more_games_item_underline" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="2.0px" />
+    </LinearLayout>
+</RelativeLayout>

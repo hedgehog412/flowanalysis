@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <CheckBoxPreference android:title="@string/sound_title" android:key="key_sound" android:defaultValue="false" />
+    <CheckBoxPreference android:title="@string/animation_title" android:key="key_animation" android:defaultValue="true" />
+    <com.digiplex.game.SeekBarPreference android:max="100" android:title="@string/animation_speed" android:key="key_animation_speed" android:dependency="key_animation" android:defaultValue="50" android:dialogMessage="@string/animation_speed" />
+    <ListPreference android:entries="@array/game_ends_list" android:title="@string/game_ends" android:key="key_new_game_ending" android:defaultValue="2048" android:dialogTitle="@string/game_ends" android:entryValues="@array/game_ends_value" />
+    <ListPreference android:entries="@array/game_orientation_list" android:title="@string/game_orientation" android:key="key_orientation" android:defaultValue="1" android:dialogTitle="@string/game_orientation" android:entryValues="@array/game_orientation_value" />
+</PreferenceScreen>

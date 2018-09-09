@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gameEndsAtArray">
+        <item>2048</item>
+        <item>4096</item>
+        <item>8192</item>
+        <item>@string/endless</item>
+    </string-array>
+    <string-array name="gameEndsAtArrayValues">
+        <item>2048</item>
+        <item>4096</item>
+        <item>8192</item>
+        <item>-2048</item>
+    </string-array>
+</resources>

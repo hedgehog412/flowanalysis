@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_settings">設定</string>
+    <string name="ad_id">ca-app-pub-3341339355055368/1041182733</string>
+    <string name="ad_id1">ca-app-pub-4425504570634371/7361772442</string>
+    <string name="app_name">2048</string>
+    <string name="endless">エンドレス モード</string>
+    <string name="for_now">今のところ…</string>
+    <string name="game_over">ゲームオーバー!</string>
+    <string name="go_on">続行するためにタップします</string>
+    <string name="header">2048</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="high_score">高得点</string>
+    <string name="instructions">  数字に参加し、2048年のタイトルを取得.</string>
+    <string name="interstitial_id">ca-app-pub-3341339355055368/2517915937</string>
+    <string name="interstitial_id1">ca-app-pub-4425504570634371/8838505649</string>
+    <string name="new_game">新しいゲーム</string>
+    <string name="score">スコア</string>
+    <string name="you_win">あなたが勝ちます!</string>
+</resources>

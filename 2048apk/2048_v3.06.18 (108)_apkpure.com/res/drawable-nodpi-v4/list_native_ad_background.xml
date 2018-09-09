@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:top="4.0dip">
+                <shape>
+                    <solid android:color="@color/native_ad_list_container_background" />
+                    <corners android:radius="8.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item>
+        <layer-list>
+            <item android:left="2.0dip" android:top="4.0dip" android:right="2.0dip">
+                <shape>
+                    <gradient android:startColor="#ffd3d1ce" android:endColor="#78d3d1ce" android:angle="270.0" />
+                    <corners android:radius="8.0dip" />
+                </shape>
+            </item>
+            <item android:bottom="4.0dip">
+                <shape>
+                    <solid android:color="@color/native_ad_list_container_background" />
+                    <corners android:radius="8.0dip" />
+                    <stroke android:width="1.0dip" android:color="@color/native_ad_list_container_stroke" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/todayOfferContainer" android:tag="@string/flag_scale" android:background="@drawable/todays_offer_bg" android:padding="16.0px" android:visibility="gone" android:layout_width="466.0px" android:layout_height="wrap_content" android:layout_marginBottom="4.0px" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/todayOfferAppIcon" android:tag="@string/flag_scale" android:layout_width="100.0px" android:layout_height="100.0px" android:src="@drawable/ic_play_game_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <RelativeLayout android:id="@id/todayOfferTextPanel" android:tag="@string/flag_scale" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0px" android:layout_toRightOf="@id/todayOfferAppIcon">
+            <TextView android:textSize="30.0px" android:textStyle="normal" android:textColor="#ff7d7d7d" android:id="@id/todayOfferH1" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/free_new_game" android:layout_alignParentTop="true" />
+            <TextView android:textSize="25.0px" android:textColor="#ffa9a9a9" android:id="@id/todayOfferLabel1" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_and_earn_xx" android:layout_below="@id/todayOfferH1" />
+            <TextView android:textSize="25.0px" android:textColor="#ff707070" android:id="@id/todayOfferLabel2" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/today_offer_label2" android:maxLines="1" android:layout_below="@id/todayOfferLabel1" />
+        </RelativeLayout>
+        <ImageView android:id="@id/todaysOfferClose" android:tag="@string/flag_scale" android:layout_width="43.0px" android:layout_height="43.0px" android:src="@drawable/todays_offer_cross_icon" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</merge>

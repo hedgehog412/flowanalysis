@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_leaderboard">排行榜</string>
+    <string name="action_rate">評分應用程式</string>
+    <string name="action_reset">重設</string>
+    <string name="action_share">分享</string>
+    <string name="action_undo">復原</string>
+    <string name="animation_fast">快</string>
+    <string name="animation_slow">慢</string>
+    <string name="animation_speed">動畫速度</string>
+    <string name="animation_title">動畫</string>
+    <string name="auto">自動</string>
+    <string name="congratulations">恭喜！你擊敗了最高分。</string>
+    <string name="dialog_score">你的分數為：</string>
+    <string name="endless">無限</string>
+    <string name="game_ends">遊戲結束於</string>
+    <string name="game_orientation">方向</string>
+    <string name="game_over">遊戲結束！</string>
+    <string name="game_won">你贏了！</string>
+    <string name="help">滑動（上、下、左、右）來移動磚塊。當兩個相同號碼的磚塊相碰時，它們就會合併成一個。當建立出 2048 個磚塊時，玩家就獲勝！</string>
+    <string name="high_score">最高分數</string>
+    <string name="landscape">橫向</string>
+    <string name="menu_achievements">成就</string>
+    <string name="menu_help">幫助</string>
+    <string name="menu_settings">設定</string>
+    <string name="portrait">縱向</string>
+    <string name="reset_confirm">你想重新開始遊戲嗎？</string>
+    <string name="score">分數</string>
+    <string name="share_app">分享应用程序</string>
+    <string name="share_message">我在 2048 得到了 %1$d 分！看看這個 %2$s。</string>
+    <string name="sound_title">聲音</string>
+    <string name="try_again">重試</string>
+</resources>

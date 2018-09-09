@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center_horizontal" android:tag="@string/flag_scale" android:background="@android:color/transparent" android:layout_width="@dimen/help_flipper_container_width" android:layout_height="@dimen/help_flipper_container_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/help_flipper_text_size_small" android:textStyle="normal" android:textColor="@color/brown" android:gravity="center_horizontal" android:id="@id/text_flipper_1_top" android:tag="@string/flag_scale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0px" android:layout_marginRight="12.0px" android:text="@string/instruction_2048_4" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" style="@style/normalButtonBoldTextNoShadow" />
+    <ImageView android:id="@id/flipper_1_middle_image" android:tag="@string/flag_scale" android:layout_width="@dimen/help_flipper_center_image_bottom_size" android:layout_height="@dimen/help_flipper_center_image_bottom_size" android:layout_marginTop="10.0px" android:src="@drawable/help_2048_4" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

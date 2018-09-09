@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#ff565656" />
+    <size android:height="@dimen/help_flipper_counter_image_size" android:width="@dimen/help_flipper_counter_image_size" />
+</shape>
