@@ -104,26 +104,41 @@ def comString(dic1, dic2):
     stringsDict2={}
     score=0
     for x in apkDict[dic1].stringxml:
+        a=x.split('/')
+        language=a[len(a)-2][7:]
         string=ET.parse(x)
         root=string.getroot()
+        stringsDict1[language]={}
         for child in root:
-            stringsDict1[child.attrib['name']]=child.text
+            stringsDict1[language][child.attrib['name']]=child.text
     for x in apkDict[dic2].stringxml:
+        a=x.split('/')
+        language=a[len(a)-2][7:]
         string=ET.parse(x)
         root=string.getroot()
+        stringsDict2[language]={}
         for child in root:
-            stringsDict2[child.attrib['name']]=child.text
+            stringsDict2[language][child.attrib['name']]=child.text
+    for name in stringsDict1:
+        string=name
+        for i in stringsDict1[name]:
+            string=string+' : '+i+' = '+stringsDict1[name][i]
+            print string
+            string=name
     for name in stringsDict1:
         if name in stringsDict2:
-            score+=1
-            if stringsDict1[name]==stringsDict2[name]:
-                score+=1
+            for i in stringsDict1[name]:
+                if i in stringsDict2[name]:
+                    score+=1
+                    if stringsDict1[name][i]==stringsDict2[name][i]:
+                        score+=1
     print score
-
 if  __name__=="__main__":
     for i in range(len(sys.argv)-1):
         sortFiles(sys.argv[i+1])
     comFiles(sys.argv[1],sys.argv[2])
-    for i in apkDict[sys.argv[1]].xml:
-        print i
     comString(sys.argv[1], sys.argv[2])
+'''
+    for i in apkDict[sys.argv[1]].stringxml:
+         print i
+'''
