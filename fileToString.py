@@ -2,39 +2,9 @@ import os
 from os.path import join, getsize
 import sys
 import xml.etree.ElementTree as ET
+from apkdirectory import apkDirectory
 
 apkDict={}
-class apkDirectory:
-    def __init__(self):
-        self.smali=[]
-        self.xml=[]
-        self.png=[]
-        self.ogg=[]
-        self.rsa=[]
-        self.ttf=[]
-        self.sf=[]
-        self.mf=[]
-        self.mp3=[]
-        self.yml=[]
-        self.properties=[]
-        self.version=[]
-        self.otf=[]
-        self.json=[]
-        self.apk=[]
-        self.html=[]
-        self.ds_store=[]
-        self.stringxml=[]
-        self.manxml=''
-
-#making seperate classes for each package
-apk1=apkDirectory()
-apk2=apkDirectory()
-apk3=apkDirectory()
-apk4=apkDirectory()
-apkDict['2048_v2.0_apkpure.com']=apk1
-apkDict['2048_v2.1_apkpure.com']=apk2
-apkDict['2048_v2.7.2_apkpure.com']=apk3
-apkDict['2048_v3.06.18 (108)_apkpure.com']=apk4
 
 #sorting the files into groups
 def sortFiles(directory):
@@ -161,12 +131,14 @@ def comMan(dic1,dic2):
     tree2=ET.parse(apkDict[dic2].manxml)
     root2=tree2.getroot()
 
-def test(dic1, dic2)
-
 if  __name__=="__main__":
+    apks = {}
     for i in range(len(sys.argv)-1):
-        sortFiles(sys.argv[i+1])
-    comFiles(sys.argv[1],sys.argv[2])
-    comString(sys.argv[1], sys.argv[2])
-    comPng(sys.argv[1],sys.argv[2])
-    comMan(sys.argv[1],sys.argv[2])
+        directory = sys.argv[i+1]
+        apks[directory] = apkDirectory(directory)
+        apks[directory].sortFiles()
+
+    comFiles(apks[sys.argv[1]], apks[sys.argv[2]])
+    comString(apks[sys.argv[1]], apks[sys.argv[2]])
+    comPng(apks[sys.argv[1]], apks[sys.argv[2]])
+    comMan(apks[sys.argv[1]], apks[sys.argv[2]])
