@@ -24,6 +24,7 @@ class apkDirectory:
         self.html=[]
         self.ds_store=[]
         self.stringxml=[]
+        self.manxml=''
 
 #making seperate classes for each package
 apk1=apkDirectory()
@@ -48,6 +49,8 @@ def sortFiles(directory):
                 apkDict[directory].smali.append(path)
             elif path.endswith('strings.xml'):
                 apkDict[directory].stringxml.append(path)
+            elif path.endswith('AndroidManifest.xml') and not root.endswith('original'):
+                apkDict[directory].manxml=path
             elif path.endswith('.xml'):
                 apkDict[directory].xml.append(path)
             elif path.endswith('.png'):
@@ -138,29 +141,32 @@ def comPng(dic1, dic2):
     png2=[]
     for x in apkDict[dic1].png:
         a=x.split('/')
-        png1.append(a[len(a)-1])
+        if a not in png1:
+            png1.append(a[len(a)-1])
     for x in apkDict[dic2].png:
         a=x.split('/')
-        png2.append(a[len(a)-1])
-    a=min(len(png1),len(png2))
+        if a not in png2:
+            png2.append(a[len(a)-1])
     for x in png1:
         if len(png2)<=0:
             break
         if x in png2:
             score+=1
-            png2.remove(x)
-    print(score/a)
+    print(score/len(png1))
 
 def comMan(dic1,dic2):
-    
+    tree1=ET.parse(apkDict[dic1].manxml)            
+    root1=tree1.getroot()
+
+    tree2=ET.parse(apkDict[dic2].manxml)
+    root2=tree2.getroot()
+
+def test(dic1, dic2)
 
 if  __name__=="__main__":
     for i in range(len(sys.argv)-1):
         sortFiles(sys.argv[i+1])
     comFiles(sys.argv[1],sys.argv[2])
     comString(sys.argv[1], sys.argv[2])
-    for i in apkDict[sys.argv[2]].png:
-        print(i)
-    for i in apkDict[sys.argv[1]].png:
-        print(i)
     comPng(sys.argv[1],sys.argv[2])
+    comMan(sys.argv[1],sys.argv[2])
